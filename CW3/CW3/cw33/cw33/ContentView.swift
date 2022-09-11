@@ -26,18 +26,18 @@ struct ContentView: View {
                     .font(.title2)
                     .padding()
             }
-            
+            VStack{
+                ExtractedView(counter: $counter)
+                    .padding()
+                ExtractedView(counter: $counter)
+                    .padding()
+                ExtractedView(counter: $counter)
+                    .padding()
+                
+            }
+
         }
-        VStack{
-            ExtractedView(counter: $counter)
-                .padding()
-            ExtractedView(counter: $counter)
-                .padding()
-            ExtractedView(counter: $counter)
-                .padding()
-            
-        }
-    }
+            }
 }
 
 struct ContentView_Previews: PreviewProvider {
